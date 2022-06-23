@@ -1,4 +1,4 @@
-#define TAM 5
+#define TAM 10
 
 int main ()
 {
@@ -6,7 +6,7 @@ int main ()
     int numeros [TAM]; 
     int i, aux, contador;
 
-    printf ("Entre com 5 números, e, pressione enter após cada um");
+    printf ("Entre com 10 números, e, pressione enter após cada um");
     for (i=0, i < TAM; i++) {
         scanf ("%d", &numeros[i]);
     }
