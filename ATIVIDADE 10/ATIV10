@@ -1,0 +1,78 @@
+import cmath
+
+class complex_number:
+    def __init__(self, real, imag):
+        self.real = real
+        self.imag = imag
+
+    def number_gerado(self):
+        return complex(self.real, self.imag)
+
+    def imprime(self):
+        print(f"Parte real: {self.real}")
+        print(f"Imagem: {self.imag}")
+        print(f"Número gerado: {self.number_gerado()}")
+
+class operacoes:
+    def __init__(self, lista):
+        self.lista = lista
+
+    def soma(self, lista):
+        return sum(lista)
+
+    def subtracao(self, lista):
+        return lista[0] - lista[1] - lista[2]
+
+    def multiplicacao(self, lista):
+        return lista[0] * lista[1] * lista[2]
+
+    def divisao(self, lista):
+        return lista[0] / lista[1] / lista[2]
+
+    def imprime(self, lista):
+        print(f"Soma: {self.soma(lista)}")
+        print(f"Subtração: {self.subtracao(lista)}")
+        print(f"Multiplicação: {self.multiplicacao(lista)}")
+        print(f"Divisão: {self.divisao(lista)}")
+
+print("\nPrimeiro número está sendo gerado\n")
+
+complexo_1 = complex_number(
+    int(input("Insira o número real: ")),
+    int(input("Insira a imagem: "))
+)
+
+print("\nSegundo número está sendo gerado\n")
+
+complexo_2 = complex_number(
+    int(input("Insira o número real: ")),
+    int(input("Insira a imagem: "))
+)
+
+print("\nO terceiro número está sendo gerado...\n")
+
+complexo_3 = complex_number(
+    int(input("Insira o número real: ")),
+    int(input("Insira a imagem: "))
+)
+
+print("\nO número está sendo gerado\n")
+
+n1 = complexo_1.number_gerado()
+n2 = complexo_2.number_gerado()
+n3 = complexo_3.number_gerado()
+
+lista_complexos = [ complexo_1, complexo_2, complexo_3 ]
+
+print("\nSeguem números gerados\n")
+for item, index in enumerate(lista_complexos):
+    print(f"\n{item + 1}º número complexo :")
+    index.imprime()
+
+lista_gerados = [ n1, n2, n3 ]
+
+operacoes_obj = operacoes(lista_gerados)
+
+print("\nOperações\n")
+
+operacoes_obj.imprime(lista_gerados)
