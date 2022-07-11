@@ -1,0 +1,16 @@
+class Main {
+  public static void main(String[] args) {
+    try{
+
+    System.out.println(50/0);
+
+    } catch(Exception excecao) {
+      System.out.println("ERRO" + excecao.getMessage());
+
+      
+    }
+
+    System.out.println("Fim do programa");
+    
+  }
+}
