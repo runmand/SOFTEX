@@ -1,0 +1,16 @@
+body{
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    display: flexbox;
+    text-align: center;
+}
+    h1 {
+        color:grey;
+    }
+    img{
+        width: 100%;
+    }
+    footer{
+        background-color: aliceblue;
+        color: grey;
+    }
