@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha(){
+        document.write("<br>");      
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+    var numero = 0;
+    var vezes = 0
+
+    while (numero <=80){
+
+        mostra(numero);
+        vezes = vezes + 1
+        numero = vezes * 8;    
+    }
+    mostra("FIM!");
+</script>
